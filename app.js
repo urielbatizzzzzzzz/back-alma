@@ -17,6 +17,6 @@ app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
 app.use(bodyParser.json({ extended: false, limit: "100mb" }));
 
-app.use('/api',router)
+app.use(router)
 
 export default app;
